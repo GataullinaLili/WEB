@@ -1,14 +1,16 @@
-function grade (a)
-{
-if (a>0)
-{console.log("Младенец")}
-else if(a<=13)
-{console.log("Ребенок")}
-else if(a<=19)
-{console.log("Подросток")}
-else if(a<=65)
-{console.log("Взрослый")}
-else
-{console.log("Пожилой")}
+function age(age) {
+  if (age >= 0 && age <= 2) {
+    console.log("младенец");
+  } else if (age >= 3 && age <= 13) {
+    console.log("ребенок");
+  } else if (age >= 14 && age <= 19) {
+    console.log("подросток");
+  } else if (age >= 20 && age <= 65) {
+    console.log( "взрослый");
+  } else {
+    console.log("пожилой");
+  }
 }
-grade(20, 1, 100)
+age(20)
+age(1)
+age(100)
