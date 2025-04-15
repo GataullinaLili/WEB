@@ -7,10 +7,12 @@ function age(age) {
     console.log("подросток");
   } else if (age >= 20 && age <= 65) {
     console.log( "взрослый");
-  } else {
-    console.log("пожилой");
+  } else if (age >= 66) {
+    console.log( "пожилой");
   }
-}
+    else console.log( "нет");
+  }
+age(-1)
 age(20)
 age(1)
 age(100)
