@@ -1,4 +1,4 @@
-function MIN(a, b, c = Infinity) {
+function MIN(a, b, c) {
     const minimum =Math.min(a, b, c);
     console.log(`Наименьшее число: ${minimum}`);
 }
