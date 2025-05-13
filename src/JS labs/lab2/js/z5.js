@@ -1,7 +1,18 @@
 function binary(a) {
+    let test = 0;
+    for (let i = 0; i < a.length; i++) {
+    if (a[i] !== '0' && a[i] !== '1' ) {
+        test = 1;
+    }
+}
+    if (test == 0) {
     const dec = parseInt(a, 2);
     console.log(dec);
+    }
+    else console.log("Неправильное значение");
 }
 
-binary('00001001'); 
+
 binary('11110000'); 
+binary('00001002'); 
+// добавить проверку
