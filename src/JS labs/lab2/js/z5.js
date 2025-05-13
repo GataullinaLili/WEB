@@ -1,7 +1,7 @@
 function binary(a) {
     let test = 0;
     for (let i = 0; i < a.length; i++) {
-    if (a[i] !== '0' && a[i] !== '1' ) {
+    if (a[i] !== '0' && a[i] !== '1' || a.length!==8) {
         test = 1;
     }
 }
@@ -14,5 +14,4 @@ function binary(a) {
 
 
 binary('11110000'); 
-binary('00001002'); 
-// добавить проверку
+binary('0000100'); 
