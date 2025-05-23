@@ -1,19 +1,17 @@
-const personals = [
-'Silas Butler',
-'Adnaan Buckley',
-'Juan Peterson',
-'Brendan Villarreal'
+const fio = [
+    'Silas Butler',
+    'Adnaan Buckley',
+    'Juan Peterson',
+    'Brendan Villarreal'
 ];
 
-const personal = {};
+const personalList = fio.map(name => {
+    return {
+        name: name,
+        personalNumber: name.length  
+    };
+});
 
-for (let i = 0; i < personals.length; i++) {
-    const name = personals[i];
-    const personalNum = name.length; 
-    personal[name] = personalNum; 
-}
-
-for (const [employeeName, personalNum] of Object.entries(personal)) {
-    console.log(`Name: ${employeeName} - Personal Number: ${personalNum}`);
-}
-
+personalList.forEach(p => {
+    console.log(`Name: ${p.name} - Personal Number: ${p.personalNumber}`);
+});
