@@ -1,6 +1,6 @@
 function calculator(a, operator, b) {
     let result;
-    
+
     if (operator === "+") {
         result = a + b;
     } else if (operator === "-") {
@@ -17,9 +17,13 @@ function calculator(a, operator, b) {
         result = "Неверный оператор";
     }
 
-    console.log(result);
+    if (typeof result === 'number') {
+        console.log(result.toFixed(2));
+    } else {
+        console.log(result);
+    }
 }
 
-calculator(5, "+", 10);      // 15
-calculator(25.5, "-", 3);    // 22.5
+calculator(5, "+", 10);      // 15.00
+calculator(25.5, "-", 3);    // 22.50
 calculator(10, "/", 0);      // Ошибка
